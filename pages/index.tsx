@@ -1,14 +1,14 @@
 import * as React from "react";
 import Link from "next/link";
 
+import Welcome from '../components/welcome/welcome'
+import {Container} from "react-bootstrap";
+
 const Index: React.FunctionComponent = () => {
     return (
-        <div>
-            <p>Welcome</p>
-            <Link href="/posts">
-                <a>Posts</a>
-            </Link>
-        </div>
+        <Container>
+            <Welcome />
+        </Container>
     );
 };
 
